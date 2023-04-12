@@ -13,8 +13,5 @@ var provider =
     .BuildServiceProvider();
 //RECUPERAMOS EL REPO DESDE LA INYECCION
 RepositoryChollos repo = provider.GetService<RepositoryChollos>();
-Console.WriteLine("Pulse ENTER para iniciar");
-Console.ReadLine();
 await repo.PopulateChollosAsync();
-Console.WriteLine("Proceso completado.  Pulse ENTER para finalizar");
-Console.ReadLine();
+
